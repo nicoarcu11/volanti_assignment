@@ -15,7 +15,9 @@ def log_derivation(chat_history: List[dict]) -> DeriveToHumanExtraction:
                  
                     You should provide a reason for the derivation based on the conversation.
                  
-                    For example, if the conversation is "I need help with my computer", you can log the reason as "Technical support required".
+                    For example, if the conversation is "Quiero comprar esto ahora", the reason could be "El usuario quiere realizar una compra".
+                 
+                    The reason should be concise and clear to help the human representative understand the context of the conversation. And it should be in Spanish.
                 """}
             ] + chat_history,
             response_format=DeriveToHumanExtraction,
